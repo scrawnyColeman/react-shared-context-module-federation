@@ -1,6 +1,7 @@
 import React from "react";
 import IncrementButton from "remote/IncrementButton";
 import DecrementButton from "remote/DecrementButton";
+// host must consume it's own remote to ensure both it and the remote are looking at the same context instance
 import { CountProvider, useCounter } from "host/context";
 
 const CountCard = () => {
